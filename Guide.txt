@@ -1,0 +1,10 @@
+npm create vite@latest toDoApp-TS
+cd 
+npm install 
+en el tsconfig.json cambiar "jsx": "react-jsx" por: "jsx": "react"
+
+poner en archivo tsconfig.node.json :     "moduleResolution": "node",
+
+poner en archivo tsconfig.json :      "moduleResolution": "node",   y comentar:     // "allowImportingTsExtensions": true,
+
+en main.tsx, al importar App, quitarle .tsx del final del path asi: import App from './App'
